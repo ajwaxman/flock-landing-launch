@@ -17,18 +17,43 @@
 </section>
 
 <section class="container-3">
-
 </section>
 
-<section class="container-4 desktop">
-  <div id="fade_1" class="pics" style="">
-      <div><%= image_tag("location_general.png", :class => "screenshots") %><span class="screenshot_captions">Keep it <span>casual<br></span>with a favorite neighborhood</div>
-      <div><%= image_tag("location_specific.png", :class => "screenshots")%><span class="screenshot_captions">Or make it <span>specific</span><br>with a local favorite</span></div>
+<section class="container-4 desktop where">
+  <div id="fade_1" class="pics" style="min-width: 700px;">
+      <div><%= image_tag("location_general.png", :class => "screenshots") %>
+        <span class="screenshot_captions">
+          <span class="caption_header">LOCATION</span><br>
+          Keep it <span class="caption_emphasize">casual<br></span></div>
+      <div><%= image_tag("location_specific.png", :class => "screenshots")%>
+        <span class="screenshot_captions">
+          <span class="caption_header">LOCATION</span><br>
+          Or make it <span class="caption_emphasize">specific</span><br></span></div>
   </div>
 </section>
 
 <section class="container-4 mobile">
   <div id="fade_2" class="pics" style="">
+      <div><%= image_tag("location_general.png", :class => "screenshots", :sytle => "float:center") %></div>
+      <div><%= image_tag("location_specific.png", :class => "screenshots")%></div>
+  </div>
+</section>
+
+<section class="container-5 desktop when">
+  <div id="fade_3" class="pics" style="min-width: 700px;">
+      <div><%= image_tag("location_general.png", :class => "screenshots") %>
+        <span class="screenshot_captions when">
+          <span class="caption_header">PICK A TIME</span><br>
+          Keep it <span class="caption_emphasize">general<br></span></div>
+      <div><%= image_tag("location_specific.png", :class => "screenshots")%>
+        <span class="screenshot_captions">
+          <span class="caption_header">PICK A TIME</span><br>
+          And figure out<br>the details <span class="caption_emphasize">later</span><br></span></div>
+  </div>
+</section>
+
+<section class="container-5 mobile">
+  <div id="fade_4" class="pics" style="">
       <div><%= image_tag("location_general.png", :class => "screenshots", :sytle => "float:center") %></div>
       <div><%= image_tag("location_specific.png", :class => "screenshots")%></div>
   </div>
@@ -43,5 +68,38 @@
       fx:      'fade',
       next:   '#fade_2', 
   });
+    $('#fade_3').cycle({ 
+      fx:      'fade',
+      next:   '#fade_3', 
+  });
+    $('#fade_4').cycle({ 
+      fx:      'fade',
+      next:   '#fade_4', 
+  });
+
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -8,6 +8,9 @@ $break_four: new-breakpoint(max-width 585px);
 // colors
 
 $green: #6A9E69;
+$lightGreen: #CDDDCB;
+$brown: #555555;
+$lightBrown: #9A948A;
 
 .mobile{
  display: none;
@@ -51,10 +54,11 @@ $green: #6A9E69;
       padding-top: 80px;
     }
     div {
-      font-family: "proxima-nova", "sans-serif";
+      font-family: "brandon-grotesque", "sans-serif";
       font-size: 4.3em;
-      color: #555555; 
+      color: $brown; 
       line-height: 110%; 
+      font-weight: 100;
       // background: blue;
       @include media($break_one) {
         font-size: 3.6em;
@@ -111,9 +115,17 @@ $green: #6A9E69;
 
 .container-4 {
   width: 100%;
-  height: 850px;
+  height: 800px;
   background-color: #F2F2F2; 
-  padding-top: 75px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.container-5 {
+  width: 100%;
+  height: 800px;
+  background-color: $lightGreen; 
+  padding-top: 80px;
   text-align: center;
 }
 
@@ -122,28 +134,55 @@ $green: #6A9E69;
 }
 
 .screenshots {
-  width: 324px;
-  height: 681px;
+  width: 302px;
+  height: 636px;
   float: left;
+}
+
+.screenshot_header {
+
 }
 
 .screenshot_captions {
   margin-left: 100px;
   padding-bottom: 300px;
   float: left;
-  padding-top: 300px;
+  padding-top: 220px;
   line-height: 1.3em;
-  font-family: "proxima-nova", "sans-serif";
-  font-size: 2em;
-  color: $green;
-  span {
-    font-size: 1.5em;
-    font-weight: 800;
-    font-style: italic;
-  } 
+  font-family: "brandon-grotesque", "sans-serif";
+  font-weight: 100;
+  font-size: 2.3em;
+  color: $lightBrown;
+  text-align: left;
   // @include media($break_four) {
   //   display: none;
   // }
+}
+
+.caption_header {
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: "brandon-grotesque", "sans-serif";
+  color: $brown;
+  line-height: 140%;
+}
+
+.caption_emphasize {
+  font-size: 1.3em;
+  font-weight: 400;
+  font-style: italic;
+} 
+
+.when {
+  
+  .caption_header {
+    color: $green;
+  }
+
+  .screenshot_captions {
+    color: #92b891;
+    line-height: 1em;
+  }
 }
 
 @include media($break_four) {
