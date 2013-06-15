@@ -113,7 +113,7 @@ $lightBrown: #9A948A;
     font-family: "proxima-nova", "sans-serif";
     font-weight: 700;
     font-style: italic; 
-    color: #92B891;
+    color: #92B996;
     text-align: center;
     padding-top: 120px;
     @include media($break_one) {
@@ -176,6 +176,10 @@ $lightBrown: #9A948A;
   background-color: #F2F2F2; 
   padding-top: 80px;
   text-align: center;
+  @include media($break_four) {
+    padding-top: 20px;
+    height: 575px;
+  }
 }
 
 .container-5 {
@@ -194,6 +198,11 @@ $lightBrown: #9A948A;
   width: 302px;
   height: 636px;
   float: left;
+  @include media($break_four) {
+    width: 173px;
+    height: 363px;
+    padding-bottom: 30px;
+  }
 }
 
 .screenshot_header {
@@ -216,6 +225,12 @@ $lightBrown: #9A948A;
   // }
 }
 
+.mobile_screenshot_header {
+  font-family: "brandon-grotesque", "sans-serif";
+  font-weight: 100;
+  color: $brown; 
+}
+
 .caption_header {
   font-size: 1.5em;
   font-weight: 100;
@@ -223,6 +238,8 @@ $lightBrown: #9A948A;
   color: $brown;
   line-height: 140%;
 }
+
+
 
 .caption_emphasize {
   font-size: 1.3em;

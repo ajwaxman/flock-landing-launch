@@ -1,5 +1,5 @@
 <head>
-<title>Flock!</title>
+<title><% content_for :title, "Flock" %></title>
 </head>
 
 <section class="container-1">
@@ -57,8 +57,16 @@
 
 <section class="container-4 mobile">
   <div id="fade_2" class="pics" style="">
-      <div><%= image_tag("location_general.png", :class => "screenshots", :sytle => "float:center") %></div>
-      <div><%= image_tag("location_specific.png", :class => "screenshots")%></div>
+      <div>
+        <h1 class="mobile_screenshot_header mobile">LOCATION</h1>
+        <%= image_tag("location_general.png", :class => "screenshots", :sytle => "float:center") %>
+        <h2 class="mobile_screenshot_header mobile">Keep it casual</h2>
+      </div>
+      <div>
+        <h1 class="mobile_screenshot_header mobile">LOCATION</h1>
+        <%= image_tag("location_specific.png", :class => "screenshots")%>
+        <h2 class="mobile_screenshot_header mobile">Or make it specific</h2>
+      </div>
   </div>
 </section>
 
