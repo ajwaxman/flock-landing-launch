@@ -1,6 +1,9 @@
 <head>
 <title><% content_for :title, "Flock" %></title>
 </head>
+<meta name="twitter:card" content="app">
+<meta name="twitter:app:id:iphone" content="id661859783">
+<meta name="twitter:app:country" content="us">
 
 <section class="container-1">
   <div>
@@ -90,23 +93,29 @@
   </div>
 </section>
 
+<section class="container-6">
+  <div class="share"></div>
+</section>
+
 <script type="text/javascript">
-    $('#fade_1').cycle({ 
-      fx:      'fade',
-      next:   '#fade_1', 
+  $('#fade_1').cycle({ 
+    fx:      'fade',
+    next:   '#fade_1', 
   });
-    $('#fade_2').cycle({ 
-      fx:      'fade',
-      next:   '#fade_2', 
+  $('#fade_2').cycle({ 
+    fx:      'fade',
+    next:   '#fade_2', 
   });
-    $('#fade_3').cycle({ 
-      fx:      'fade',
-      next:   '#fade_3', 
+  $('#fade_3').cycle({ 
+    fx:      'fade',
+    next:   '#fade_3', 
   });
-    $('#fade_4').cycle({ 
-      fx:      'fade',
-      next:   '#fade_4', 
+  $('#fade_4').cycle({ 
+    fx:      'fade',
+    next:   '#fade_4', 
   });
+
+  $('.share').sharer()
 
 </script>
 

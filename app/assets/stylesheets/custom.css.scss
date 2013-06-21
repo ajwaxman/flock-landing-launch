@@ -259,6 +259,16 @@ $lightBrown: #9A948A;
   }
 }
 
+.container-6 {
+  text-align: center;
+  height: 200px;
+  padding-top: 100px;
+}
+
+.share {
+  text-align: center;
+}
+
 @include media($break_four) {
   .desktop {
     display: none;
