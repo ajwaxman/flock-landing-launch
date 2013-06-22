@@ -115,9 +115,15 @@ $lightBrown: #9A948A;
 
   div.header_div {
     @include outer-container;
-    padding-top: 100px;
+    padding-top: 90px;
     @include media($break_four) {
       padding-top: 80px;
+    }
+    div.link-subtext {
+      font-size: 1.5em; 
+      margin-top: 5px;
+      font-weight: 300;
+      color: $green;
     }
     div {
       font-family: "brandon-grotesque", "sans-serif";
@@ -139,8 +145,10 @@ $lightBrown: #9A948A;
         padding-top: 30px;
       }
       @include media($break_four) {
+        line-height: 120%;
         font-size: 1.8em;
         padding-top: 0px;
+        font-weight: 300;
       }
     }
   }
@@ -167,7 +175,7 @@ $lightBrown: #9A948A;
     color: white;
     text-decoration: none;
     @include media($break_four) {
-      font-size: 1.3em;
+      font-size: 1.1em;
       padding-top: 5px;
     }
   }
@@ -232,6 +240,9 @@ $lightBrown: #9A948A;
       padding-top: 5px;
       line-height: 100%;
       margin: 0;
+      @include media($break_four) {
+        font-weight: 300;
+      }
     }
   }
 }
@@ -254,6 +265,10 @@ $lightBrown: #9A948A;
   background-color: $lightGreen; 
   padding-top: 80px;
   text-align: center;
+  @include media($break_four) {
+    padding-top: 20px;
+    height: 575px;
+  }
 }
 
 .pics {
@@ -271,10 +286,6 @@ $lightBrown: #9A948A;
   }
 }
 
-.screenshot_header {
-
-}
-
 .screenshot_captions {
   margin-left: 100px;
   padding-bottom: 300px;
@@ -286,15 +297,16 @@ $lightBrown: #9A948A;
   font-size: 2.3em;
   color: $lightBrown;
   text-align: left;
-  // @include media($break_four) {
-  //   display: none;
-  // }
 }
 
 .mobile_screenshot_header {
   font-family: "brandon-grotesque", "sans-serif";
-  font-weight: 100;
+  font-weight: 300;
   color: $brown; 
+}
+
+.double-line {
+  line-height: 110%;
 }
 
 .caption_header {
@@ -305,7 +317,9 @@ $lightBrown: #9A948A;
   line-height: 140%;
 }
 
-
+.green-theme {
+  color: $green;
+}
 
 .caption_emphasize {
   font-size: 1.3em;
@@ -313,26 +327,28 @@ $lightBrown: #9A948A;
   font-style: italic;
 } 
 
-.when {
-  
-  .caption_header {
-    color: $green;
-  }
-
-  .screenshot_captions {
-    color: #92b891;
-    line-height: 1em;
-  }
-}
-
 .container-6 {
+  background: $lightGreen;
   text-align: center;
-  height: 200px;
+  height: 400px;
   padding-top: 100px;
 }
 
-.share {
+.link-subtext {
+  color: $green;
+  font-size: 2.5em;
+  font-weight: 100;
+  font-family: "brandon-grotesque", "sans-serif";
+}
+
+.share_div {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.share-button {
+  text-align: center;
+  margin: 0 auto;
 }
 
 @include media($break_four) {
