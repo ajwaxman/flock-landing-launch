@@ -1,15 +1,5 @@
 class StaticPagesController < ApplicationController  
 
-  ## Twilio Account Info
-
-  if Rails.env.development?
-    account_sid = 'AC3dbe5936e567d442b4f6700ea22ddd10'
-    auth_token = '8cd1d5bbc32d4a54721969eda0913fe6'
-  elsif Rails.ev.development?
-    account_sid = 'AC4e73e3a1546d3c406c0d0dda8f1deb65'
-    auth_token = 'f3350a4011144f67f2aabd5d4ea24165'
-  end
-
   # set up a client to talk to the Twilio REST API
   
 
