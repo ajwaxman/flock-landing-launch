@@ -1,6 +1,10 @@
 FlockLandingLaunch::Application.routes.draw do
   root to: 'static_pages#home'
 
+  # match '/',  to: 'twilio#send_text'
+  # match '/',  to: 'static_pages#send_text'
+  post '/send_text', to: 'static_pages#send_text', as: 'send_text'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

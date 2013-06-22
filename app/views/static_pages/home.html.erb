@@ -3,10 +3,9 @@
 <meta name="twitter:card" content="app">
 <meta name="twitter:app:id:iphone" content="id661859783">
 <meta name="twitter:app:id:ipad" content="id661859783">
-<meta name="twitter:app:id:googleplay" content="com.flock.app"/>
+<meta name="twitter:app:id:googleplay" content="com.flockwithme.app"/>
 <meta name="twitter:app:country" content="us">
-<meta name="twitter:url" content="https://itunes.apple.com/us/app/flock-do-more-with-friends/id661859783">
-<!-- <meta name="twitter:app:url:iphone" content="flock://"> -->
+<meta name="twitter:url" content="http://www.flockwithme.com">
 </head>
 
 
@@ -22,14 +21,21 @@
   </div>
   <div id="button-adam">
     <div>
-      <a href="#" class="desktop">TEXT LINK</a>
+      <a href="#tip5" class="desktop fancybox">TEXT LINK</a>
       <a href="#" class="mobile">DOWNLOAD APP</a>
     </div>
   </div>
 </section>
 
+<div style="display:none" class="text" id="tip5">
+    <%= form_tag(send_text_path, :method => :post) do %>
+      <%= text_field_tag(:number, nil, :placeholder => '555-555-5555')%><br>
+      <%= submit_tag("Submit") %>
+    <% end %>
+</div>
+
 <section class="container-3">
-  <h1 class="hiw_header">HOW IT WORKS</h1>
+  <h1 class="hiw_header">CREATE AN EVENT IN JUST A COUPLE TAPS</h1>
   <div>
     <li>
       <%= image_tag("hiw_activity.png", class:"how_it_works_pic") %>
@@ -102,6 +108,9 @@
   <div class="share"></div>
 </section>
 
+
+<!-- JS for Cycle -->
+
 <script type="text/javascript">
   $('#fade_1').cycle({ 
     fx:      'fade',
@@ -121,6 +130,24 @@
   });
 
   $('.share').sharer()
+
+</script>
+
+<!-- JS for Fancybox -->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      $("a.fancybox").fancybox({
+        maxWidth: 900,
+        helpers : {
+            overlay : {
+                css : {
+                    'background' : 'rgba(0, 0, 0, 0.8)'
+                }
+            },
+        }
+      });
+    });
 
 </script>
 

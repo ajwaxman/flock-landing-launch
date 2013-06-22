@@ -5,6 +5,7 @@ gem 'will_paginate', '3.0.3'
 gem 'bourbon'
 gem 'neat'
 gem 'jquery-rails', '2.0.2'
+gem 'twilio-ruby'
 
 
 
