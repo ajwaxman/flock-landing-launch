@@ -121,7 +121,7 @@ $lightBrown: #9A948A;
     }
     div.link-subtext {
       font-size: 1.5em; 
-      margin-top: 5px;
+      margin-top: 15px;
       font-weight: 300;
       color: $green;
     }
@@ -332,6 +332,9 @@ $lightBrown: #9A948A;
   text-align: center;
   height: 430px;
   padding-top: 100px;
+  @include media($break_four) {
+    height: 375px;
+  }
 }
 
 .link-subtext {
@@ -355,6 +358,9 @@ $lightBrown: #9A948A;
   background: #F2F2F2;
   text-align: center;
   height: 80px;
+  @include media($break_four) {
+    height: 110px;
+  }
 }
 
 .copyright {
@@ -362,17 +368,30 @@ $lightBrown: #9A948A;
   margin-left: 30px;
   margin-top: 35px;
   color: $lightBrown;
+  @include media($break_four) {
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 .social-icons {
+  margin-right: 20px;
   float: right;
   a{
     text-decoration: none;
   }
+  @include media($break_four) {
+    text-align: center;
+    float: none;
+    margin: 0;
+  }
+
 }
 
 .ib-social-icons {
-  font-size: 40px;
+  margin-top: 25px;
+  font-size: 35px;
   padding: 0 10px;
   color: $lightBrown; 
   &:hover {
@@ -380,8 +399,22 @@ $lightBrown: #9A948A;
   }
 } 
 
-.icon-linkedin-sign:hover {
-  color: blue;
+.icon-facebook, .icon-twitter, .icon-envelope {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.icon-facebook:hover {
+  color: #3B5998;
+}
+
+.icon-twitter:hover {
+  color: #06ADE8;
+}
+
+.icon-envelope:hover {
+  color: $green;
 }
 
 @include media($break_four) {
