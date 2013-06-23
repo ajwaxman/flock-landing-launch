@@ -38,7 +38,7 @@
 </div>
 
 <section class="container-3">
-  <h1 class="hiw_header">CREATE AN EVENT IN JUST A COUPLE TAPS</h1>
+  <h1 class="hiw_header">CREATE AN EVENT IN A COUPLE TAPS</h1>
   <div>
     <li>
       <%= image_tag("hiw_activity.png", class:"how_it_works_pic") %>
@@ -144,9 +144,6 @@
 </section>
 
 <section class="container-6">
-  <div class="share_div">
-    <div class="share-button"></div>
-  </div>
   <div class="desktop link-subtext">Get a link to download the app below:</div>
   <div id="button-adam">
     <div>
@@ -154,6 +151,19 @@
       <a href="http://bit.ly/11LgLAn" class="mobile">DOWNLOAD THE APP</a>
     </div>
   </div>
+  <div class="share_div">
+    <div class="share-button"></div>
+  </div>
+</section>
+
+<section class="container-7">
+  <span class="copyright">© FivePoints Social, LLC</span>
+  <span class="social-icons">
+      <a href="https://twitter.com/ajwaxman"><i class="icon-twitter ib-social-icons"></i></a>
+      <a href="http://www.linkedin.com/in/adamjwaxman"><i class="icon-linkedin-sign ib-social-icons"></i></a>
+      <a href="https://github.com/awaxman11"><i class="icon-github ib-social-icons"></i></a>
+      <a href="https://medium.com/@ajwaxman"><i class="icon-rss ib-social-icons"></i></a>
+  </span>
 </section>
 
 
@@ -188,9 +198,18 @@
 
   $(function(){
     $('.share-button').share({
-      title: 'Share Button Test',
-      image: 'http://carrot.is/img/fb-share.jpg',
-      app_id: '602752456409826'
+      twitter: {
+        text: "Check out Flock! The easiest way to do more with friends! www.flockwithme.com"
+      },
+      facebook: {
+        name: 'Flock: Do More With Friends',
+        link: 'www.facebook.com/flockwithme',
+        text: 'The easiest way to do more with friends!',
+        image: ""
+      },
+      url: 'flockwithme.com',
+      background: '#6A9E69',
+      color: '#fff'
     })
   });
 
@@ -213,6 +232,12 @@
     });
 
 </script>
+
+<style type="text/css">
+  .share-button ul li {
+    height: 46px;
+  }
+</style>
 
 
 

@@ -330,7 +330,7 @@ $lightBrown: #9A948A;
 .container-6 {
   background: $lightGreen;
   text-align: center;
-  height: 400px;
+  height: 430px;
   padding-top: 100px;
 }
 
@@ -343,12 +343,45 @@ $lightBrown: #9A948A;
 
 .share_div {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 90px;
 }
 
 .share-button {
   text-align: center;
   margin: 0 auto;
+}
+
+.container-7 {
+  background: #F2F2F2;
+  text-align: center;
+  height: 80px;
+}
+
+.copyright {
+  float: left;
+  margin-left: 30px;
+  margin-top: 35px;
+  color: $lightBrown;
+}
+
+.social-icons {
+  float: right;
+  a{
+    text-decoration: none;
+  }
+}
+
+.ib-social-icons {
+  font-size: 40px;
+  padding: 0 10px;
+  color: $lightBrown; 
+  &:hover {
+
+  }
+} 
+
+.icon-linkedin-sign:hover {
+  color: blue;
 }
 
 @include media($break_four) {
