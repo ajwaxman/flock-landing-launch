@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
     @client.account.sms.messages.create(
       :from => '+16465024533',
       :to => number,
-      :body => 'Download Flock and do more together: http://flockwithme.com/download'
+      :body => 'Download Flock and do more together: http://flockwithme.com/app'
     ) 
     redirect_to root_path
   end
