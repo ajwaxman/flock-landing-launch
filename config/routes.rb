@@ -5,6 +5,8 @@ FlockLandingLaunch::Application.routes.draw do
   # match '/',  to: 'static_pages#send_text'
   post '/send_text', to: 'static_pages#send_text', as: 'send_text'
 
+  match '/download', to: 'ios#download', as: 'download'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
