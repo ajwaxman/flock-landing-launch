@@ -163,6 +163,7 @@ $lightBrown: #9A948A;
   margin-top: 20px;
   @include media($break_four) {
     width:70%;
+    border-radius: 50px;
   }
   div {
     padding-top: 17px; 
@@ -175,7 +176,7 @@ $lightBrown: #9A948A;
     color: white;
     text-decoration: none;
     @include media($break_four) {
-      font-size: 1.1em;
+      font-size: 1.0em;
       padding-top: 5px;
     }
   }
@@ -204,7 +205,7 @@ $lightBrown: #9A948A;
   height: 650px;
   background-color: #CDDDCB;
   @include media($break_four) {
-    height: 1100px;
+    height: 180px;
   }
 
   div {
