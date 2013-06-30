@@ -1,8 +1,9 @@
 FlockLandingLaunch::Application.routes.draw do
   root to: 'static_pages#home'
 
-  # match '/',  to: 'twilio#send_text'
-  # match '/',  to: 'static_pages#send_text'
+  match '/terms',  to: 'static_pages#tos'
+  match '/privacy',  to: 'static_pages#privacy'
+
   post '/send_text', to: 'static_pages#send_text', as: 'send_text'
 
   match '/app', to: 'ios#app', as: 'app'
