@@ -6,6 +6,7 @@
 <meta name="twitter:app:id:googleplay" content="com.flockwithme.app"/>
 <meta name="twitter:app:country" content="us">
 <meta name="twitter:url" content="http://www.flockwithme.com">
+<meta property="og:image" content="http://www.flockwithme.com/assets/FB_Logo_2.png">
 </head>
 
 
@@ -23,12 +24,12 @@
 
 
   <div id="button-adam">  
-      <a href="#tip5" class="desktop fancybox"><div>SEND ME A LINK</div></a>
+      <a href="#number_form" class="desktop fancybox"><div>SEND ME A LINK</div></a>
       <a href="http://bit.ly/11LgLAn" class="mobile"><div>DOWNLOAD THE APP</div></a>
   </div>
 </section>
 
-<div style="display:none" class="text" id="tip5">
+<div style="display:none" class="text" id="number_form">
     <%= form_tag(send_text_path, :method => :post) do %>
       <%= text_field_tag(:number, nil, :placeholder => '555-555-5555')%><br>
       <%= submit_tag("Submit") %>
@@ -144,7 +145,7 @@
 <section class="container-6">
   <div class="desktop link-subtext">Get a link to download the app below:</div>
   <div id="button-adam">  
-      <a href="#tip5" class="desktop fancybox"><div>SEND ME A LINK</div></a>
+      <a href="#number_form" class="desktop fancybox"><div>SEND ME A LINK</div></a>
       <a href="http://bit.ly/11LgLAn" class="mobile"><div>DOWNLOAD THE APP</div></a>
   </div>
   <div class="share_div">
