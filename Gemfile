@@ -7,6 +7,7 @@ gem 'neat'
 gem 'jquery-rails', '2.0.2'
 gem 'twilio-ruby'
 gem 'font-awesome-sass-rails'
+gem "animate-rails"
 
 
 
