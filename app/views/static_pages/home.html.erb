@@ -6,7 +6,7 @@
 <meta name="twitter:app:id:googleplay" content="com.flockwithme.app"/>
 <meta name="twitter:app:country" content="us">
 <meta name="twitter:url" content="http://www.flockwithme.com">
-<meta property="og:image" content="http://www.flockwithme.com/assets/FB_Logo_2.png">
+<meta property="og:image" content="https://sphotos-a-lga.xx.fbcdn.net/hphotos-prn1/164607_435090329898575_186003531_n.png">
 </head>
 
 
@@ -28,6 +28,13 @@
   <div id="button-adam">  
       <a href="#number_form" class="desktop fancybox"><div>SEND ME A LINK</div></a>
       <a href="http://bit.ly/11LgLAn" class="mobile"><div>DOWNLOAD THE APP</div></a>
+  </div>
+
+  <div id="social-buttons">
+    <span style="padding-right: 15px"><a href="https://twitter.com/flockwme" class="twitter-follow-button" data-show-count="false">Follow @ajwaxman</a></span>  
+    <a href="https://twitter.com/share?text=Check out Flock: Do More With Friends - a fun and casual way to make plans!" class="twitter-share-button" data-url="http://flockwithme.com" data-via="flockwme" data-lang="en">Tweet</a>
+    <span style="left:-20px;"class="fb-like" data-href="http://flockwithme.com/app" data-width="" data-layout="button_count" data-show-faces="true" data-send="true"></span>
+    <span id="fb-root"></span>
   </div>
 </section>
 
@@ -233,6 +240,25 @@
         }
       });
     });
+
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=426154300770370";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+(function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.src = '//hnbutton.appspot.com/static/hn.min.js';
+    s.parentNode.insertBefore(g, s);
+}(document, 'script'));
+
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
 </script>
 
