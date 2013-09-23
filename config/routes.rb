@@ -3,6 +3,7 @@ FlockLandingLaunch::Application.routes.draw do
 
   match '/terms',  to: 'static_pages#tos'
   match '/privacy',  to: 'static_pages#privacy'
+  match '/new',  to: 'static_pages#new'
 
   post '/send_text', to: 'static_pages#send_text', as: 'send_text'
 
